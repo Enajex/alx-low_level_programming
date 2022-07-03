@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * main - Task 1 print the last digit of the number stored in the variable n
+ * main - Determine if the last digit of a random number is greater than or less tham 5, or is zero.
+ *
  * Return: 0
  */
 int main(void)
@@ -13,7 +13,6 @@ int main(void)
 	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	             /* your code goes there */
 	printf("%s %d is %d and is ", last, n, n % 10);
 	if (n % 10 > 5)
 	{
